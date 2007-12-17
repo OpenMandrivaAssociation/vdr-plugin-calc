@@ -16,7 +16,6 @@ License:	GPL
 URL:		http://www.vdrcalc.bmschneider.de/index2.html
 Source:		http://www.vdrcalc.bmschneider.de/dateien/vdr-%plugin-%tarversion.tar.bz2
 Patch1:		calc-0.0.1-rc5-extra-qualification.patch
-BuildRoot:	%{_tmppath}/%{name}-buildroot
 BuildRequires:	vdr-devel >= 1.4.1-6
 Requires:	vdr-abi = %vdr_abi
 Requires:	bc
