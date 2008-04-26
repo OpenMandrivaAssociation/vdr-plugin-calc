@@ -4,7 +4,7 @@
 %define version	0.0.1
 %define tarversion 0[1].0.1-%rcver
 %define rcver	rc5
-%define rel	15
+%define rel	16
 %define release 0.%rcver.%rel
 
 Summary:	VDR plugin: VDR mini calculator
@@ -16,8 +16,9 @@ License:	GPL
 URL:		http://www.vdrcalc.bmschneider.de/index2.html
 Source:		http://www.vdrcalc.bmschneider.de/dateien/vdr-%plugin-%tarversion.tar.bz2
 Patch1:		calc-0.0.1-rc5-extra-qualification.patch
+Patch2:		calc-02_pathes.dpatch
 BuildRoot:	%{_tmppath}/%{name}-buildroot
-BuildRequires:	vdr-devel >= 1.4.1-6
+BuildRequires:	vdr-devel >= 1.6.0
 Requires:	vdr-abi = %vdr_abi
 Requires:	bc
 
@@ -30,6 +31,8 @@ functions.
 %prep
 %setup -q -n %plugin-%version-%rcver
 %patch1 -p1
+%patch2 -p1
+%vdr_plugin_prep
 
 %build
 %vdr_plugin_build
