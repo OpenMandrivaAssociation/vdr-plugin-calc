@@ -1,7 +1,7 @@
 %define plugin	calc
 %define tarversion 0[1].0.1-%rcver
 %define rcver	rc5
-%define rel	19
+%define rel	20
 %define release 0.%rcver.%rel
 
 Summary:	VDR plugin: VDR mini calculator
