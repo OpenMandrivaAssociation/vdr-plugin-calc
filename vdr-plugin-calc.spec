@@ -8,7 +8,7 @@ Version:	0.0.1
 Release:	0.%rcver.21
 Group:		Video
 License:	GPL
-URL:		http://www.vdrcalc.bmschneider.de/index2.html
+URL:		https://www.vdrcalc.bmschneider.de/index2.html
 Source:		http://www.vdrcalc.bmschneider.de/dateien/vdr-%plugin-%tarversion.tar.bz2
 Patch1:		calc-0.0.1-rc5-extra-qualification.patch
 Patch2:		calc-02_pathes.dpatch
